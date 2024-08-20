@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="jsassign1.css">
+    
+</head>
+
+
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Register student details, edit existing records, or delete them easily.</p>
+    </header>
+
+    <main>
+        <section id="registration-form">
+            <h2>Register Student</h2>
+            <form id="studentForm">
+                <div>
+                    <label for="studentName">Student Name:</label>
+                    <input type="text" id="studentName" required>
+                </div>
+                <div>
+                    <label for="studentID">Student ID:</label>
+                    <input type="number" id="studentID" required>
+                </div>
+                <div>
+                    <label for="emailID">Email ID:</label>
+                    <input type="email" id="emailID" required>
+                </div>
+                <div>
+                    <label for="contactNo">Contact No:</label>
+                    <input type="tel" id="contactNo" required>
+                </div>
+                <div>
+                    <button type="submit">Add Student</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="studentList">
+            <h2>Registered Students</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Student ID</th>
+                        <th>Email ID</th>
+                        <th>Contact No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentRecords">
+                    <!-- Student records will be displayed here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="jsassign1.js"></script>
+</body>
+
+</html>
